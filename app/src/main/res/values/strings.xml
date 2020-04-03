@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Step2-ProjectEkam</string>
+    <string name="city">City :</string>
+    <string name="state">State :</string>
+    <string name="district">District :</string>
+    <string name="indian_cities_api">Indian Cities Api</string>
+    <string name="backbutton">backButton</string>
+    <string name="nextbutton">nextButton</string>
 </resources>
