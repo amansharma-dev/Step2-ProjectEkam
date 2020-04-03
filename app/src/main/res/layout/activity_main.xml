@@ -53,15 +53,16 @@
                     android:textSize="26sp"
                     android:textAlignment="textEnd"
                     android:layout_marginEnd="20dp"
-                    android:textStyle="normal"
-                    android:textColor="@color/colorText"/>
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBG"/>
 
                 <TextView
                     android:id="@+id/city_textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:textSize="24sp"                    android:textStyle="normal"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic"
                     android:textColor="@color/colorTextAPI"
                     />
 
@@ -82,8 +83,8 @@
                     android:textSize="26sp"
                     android:textAlignment="textEnd"
                     android:layout_marginEnd="20dp"
-                    android:textStyle="normal"
-                    android:textColor="@color/colorText"/>
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBG"/>
 
                 <TextView
                     android:id="@+id/state_textView"
@@ -91,7 +92,7 @@
                     android:layout_height="wrap_content"
                     android:text=""
                     android:textSize="24sp"
-                    android:textStyle="normal"
+                    android:textStyle="bold|italic"
                     android:textColor="@color/colorTextAPI"/>
 
             </LinearLayout>
@@ -110,8 +111,8 @@
                     android:textSize="26sp"
                     android:textAlignment="textEnd"
                     android:layout_marginEnd="20dp"
-                    android:textStyle="normal"
-                    android:textColor="@color/colorText"/>
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBG"/>
 
                 <TextView
                     android:id="@+id/district_textView"
@@ -119,7 +120,7 @@
                     android:layout_height="wrap_content"
                     android:text=""
                     android:textSize="24sp"
-                    android:textStyle="normal"
+                    android:textStyle="bold|italic"
                     android:textColor="@color/colorTextAPI"/>
 
             </LinearLayout>
