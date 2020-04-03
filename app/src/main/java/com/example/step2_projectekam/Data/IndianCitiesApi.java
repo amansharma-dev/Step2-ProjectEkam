@@ -21,9 +21,9 @@ public class IndianCitiesApi {
 
     ArrayList<IndianCities> indianCitiesArrayList = new ArrayList<>();
 
-    public List<IndianCities> getIndianCities(){
+    public List<IndianCities> getIndianCities(final AsyncIndianCitiesApi callback){
 
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,
+        final JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET,
                 url,
                 null,
                 new Response.Listener<JSONArray>() {
@@ -36,11 +36,16 @@ public class IndianCitiesApi {
                                 indianCities.setState(response.getJSONObject(i).getString("State"));
                                 indianCities.setDistrict(response.getJSONObject(i).getString("District"));
 
-                                Log.d("INDIANCITIES", "onResponse: "+response.getJSONObject(i).getString("City")+ ", "+response.getJSONObject(i).getString("State")+", "+response.getJSONObject(i).getString("District"));
+                                indianCitiesArrayList.add(indianCities);
+                               // Log.d("INDIANCITIES", "onResponse: "+response.getJSONObject(i).getString("City")+ ", "+response.getJSONObject(i).getString("State")+", "+response.getJSONObject(i).getString("District"));
 
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
+                        }
+
+                        if(null != callback){
+                            callback.processFinished(indianCitiesArrayList);
                         }
 
 

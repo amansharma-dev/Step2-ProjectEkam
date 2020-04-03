@@ -37,4 +37,13 @@ public class IndianCities {
     public void setDistrict(String district) {
         this.district = district;
     }
+
+    @Override
+    public String toString() {
+        return "IndianCities{" +
+                "city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", district='" + district + '\'' +
+                '}';
+    }
 }
